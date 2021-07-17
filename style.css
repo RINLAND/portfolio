@@ -53,6 +53,14 @@ ul{
     padding-left: 0;
 
 }
+
+button{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+}
 /* Typography */
 /* 패딩, 텍스트에 대해서 미리 스타일링 */
 h1 {
@@ -87,8 +95,11 @@ p{
 /* Navbar */
 #navbar{
     display: flex;
+    /* 박스 2개있으니깐 flex 박스로 하자 양쪽에 나올 수 있도록 */
     justify-content: space-between;
-    background-color: var(--color-purple);
+    /* 중심축에서 정렬 */
+    /* background-color: var(--color-purple); */
+    background: url('imgs/home-background.png') center/cover;
     align-items: center;
     color:var(--color-white);
     padding: 16px;
@@ -105,4 +116,35 @@ p{
 .navbar__menu__item{
     padding: 8px 12px;
     margin: 0 4px;
+}
+
+
+/* Home */
+
+#home{
+    background: url('imgs/home-background.png') center/cover;
+    padding:40px;
+    text-align: center;
+}
+
+.home__avatar{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border:2px solid var(--color-light-white);
+}
+
+.home__title,
+.home__description{
+    color: var(--color-white);
+}
+
+.home__contact{
+    color: var(--color-white);
+    font-size: var(--font-regular);
+    font-weight: var(--weight-bold);
+    margin: 24px;
+    padding: 8px 12px;
+    border: 2px solid var(--color-white);
+    border-radius: 4px;
 }
