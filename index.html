@@ -46,36 +46,42 @@
         <button class="home__contact">CONTACT ME</button>
     </section>
     <!-- About -->
-    <section id="about">
+    <section id="about" class="section section__container">
         <h1>About me</h1>
         <p>나를 어필할 수 있는 문장 2-3개 적어보기</p>
-        <div class="about__majors"></div>
-        <div class="major">
-            <div class="major__icon"><i class="fab fa-html5"></i></div>
-            <div class="major__title">Front-end</div>
-            <div class="major__description">HTML, CSS, JavaScript</div>
-        </div>
-        <div class="major">
-            <div class="major__icon"><i class="fas fa-server"></i></div>
-            <div class="major__title">Back-end</div>
-            <div class="major__description">Java, JavaScript</div>
+        <div class="about__majors">
+            <div class="major">
+                <div class="major__icon"><i class="fab fa-html5"></i></div>
+                <h2 class="major__title">Front-end</h2>
+                <div class="major__description">HTML, CSS, JavaScript</div>
+            </div>
+            <div class="major">
+                <div class="major__icon"><i class="fas fa-server"></i></div>
+                <h2 class="major__title">Back-end</h2>
+                <div class="major__description">Java, JavaScript</div>
+            </div>
         </div>
         <div class="about__jobs">
             <div class="job">
                 <img src="imgs/jobs/school.png" alt="dankook" class="job__logo">
-                <p class="job__name">단국대학교 응용통계학과</p>
-                <p class="job__period">2021.02월 졸업</p>
+                <div class="job__description">
+                    <p class="job__name">단국대학교 응용통계학과</p>
+                    <p class="job__period">2021.02월 졸업</p>
+                </div>
             </div>
             <div class="job">
                 <img src="imgs/jobs/greenart.png" alt="greenart" class="job__logo">
-                <p class="job__name">그린아트컴퓨터아카데미</p>
-                <p class="job__period">2020.07~2021.02</p>
+                <div class="job__description">                                    
+                    <p class="job__name">그린아트컴퓨터아카데미</p>
+                    <p class="job__period">2020.07~2021.02</p>
+                </div>
             </div>
         </div>
     </section>
     <!-- Skills -->
-    <section id="skills">
-        <h1>Skills</h1>
+    <section id="skills" class="section">
+        <div class="section__container">
+            <h1>Skills</h1>
         <h2>Skills & Attributes</h2>
         <p>
             내가사용할수있는스킬들에 대한설명
@@ -86,46 +92,46 @@
                 <div class="skill">
                     <div class="skill__description">
                         <span>HTML</span>
-                        <span>99%</span>
+                        <span>90%</span>
                     </div>
-                    <div class="skill_bar">
-                        <div class="skill_value"></div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 90%;"></div>
                     </div>
                 </div>
                 <div class="skill">
                     <div class="skill__description">
                         <span>CSS</span>
-                        <span>99%</span>
+                        <span>80%</span>
                     </div>
-                    <div class="skill_bar">
-                        <div class="skill_value"></div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 80%;"></div>
                     </div>
                 </div>
                 <div class="skill">
                     <div class="skill__description">
                         <span>JAVASCRIPT</span>
-                        <span>99%</span>
+                        <span>60%</span>
                     </div>
-                    <div class="skill_bar">
-                        <div class="skill_value"></div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 60%;"></div>
                     </div>
                 </div>
                 <div class="skill">
                     <div class="skill__description">
                         <span>NODE.JS</span>
-                        <span>99%</span>
+                        <span>70%</span>
                     </div>
-                    <div class="skill_bar">
-                        <div class="skill_value"></div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 70%;"></div>
                     </div>
                 </div>
                 <div class="skill">
                     <div class="skill__description">
                         <span>JAVA</span>
-                        <span>99%</span>
+                        <span>90%</span>
                     </div>
-                    <div class="skill_bar">
-                        <div class="skill_value"></div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 90%;"></div>
                     </div>
                 </div>
             </div>
@@ -148,9 +154,11 @@
                 </div>
             </div>
         </div>
+        </div>
+        
     </section>
     <!-- Work -->
-    <section id="work">
+    <section id="work" class="section">
         <h1>My work</h1>
         <h3>Projects</h3>
         <div class="work__categories">
@@ -191,7 +199,7 @@
         </div>
     </section>
     <!-- Testimonials -->
-    <section id="testimonials">
+    <section id="testimonials" class="section">
         <h1>Testimonial</h1>
         <h3>See what they say about me</h3>
         <div class="testimonial">
@@ -210,7 +218,7 @@
         </div>
     </section>
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="section">
         <h1 class="contact__title">Let's talk</h1>
         <h2 class="contact__email">summerland829@gmail.com</h2>
         <div class="contact__links">
