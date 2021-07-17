@@ -1,5 +1,7 @@
 /* Global */
+
 :root{
+
     /* Color */
     --color-white: #ffffff;
     --color-light-white: #eeeeee;
@@ -33,3 +35,33 @@
 * {
     box-sizing: border-box;
 }
+/* Typography */
+/* 패딩, 텍스트에 대해서 미리 스타일링 */
+h1 {
+    font-size: var(--font-large);
+    font-weight: var(--weight-bold);
+    color:var(--color-black);
+    margin: 16px 0; 
+    /* 16px 위아래 0 양옆 */
+}
+
+h2{
+    font-size: var(--font-medium);
+    font-weight: var(--weight-semi-bold);
+    color:var(--color-black);
+    margin: 8px 0;
+}
+
+h3{
+    font-size: var(--font-regular);
+    font-weight: var(--weight-regular);
+    color:var(--color-black);
+    margin: 8px 0;
+}
+
+p{
+    font-size: var(--font-regular);
+    font-weight: var(--weight-regular);
+    color:var(--color-black);
+    margin: 4px 0;
+}    
