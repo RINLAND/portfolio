@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <!--웹사이트에 관한 정보가 들어있다.-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rin's Portfolio</title>
-    <meta name="description" content="Portfolio for world-renowed software engineer Rin">
-    <meta name="author" content="Rin">
-    <link rel="icon" type="image/png" href="imgs/favicon.png">
-    <!--fontawesome-->
-    <script src="https://kit.fontawesome.com/7c837f57c2.js" crossorigin="anonymous"></script>
-    <!--googlefonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
-</head>
+    <head>
+        <!--웹사이트에 관한 정보가 들어있다.-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rin's Portfolio</title>
+        <meta
+            name="description"
+            content="Portfolio for world-renowed software engineer Rin">
+        <meta name="author" content="Rin">
+        <link rel="icon" type="image/png" href="imgs/favicon.png">
+        <!--fontawesome-->
+        <script src="https://kit.fontawesome.com/7c837f57c2.js" crossorigin="anonymous"></script>
+        <!--googlefonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer="defer"></script>
+    </head>
 
-<body>
-    <!--Navbar-->
-    <nav id="navbar">
-        <div class="navbar__logo">
-         <img src="imgs/favicon.png" width="30" height="30">  
-        <a href="#">Rin</a>
-        </div>
+    <body>
+        <!--Navbar-->
+        <nav id="navbar">
+            <div class="navbar__logo">
+                <img src="imgs/favicon.png" width="30" height="30">
+                <a href="#">Rin</a>
+            </div>
             <ul class="navbar__menu">
                 <li class="navbar__menu__item">Home</li>
                 <li class="navbar__menu__item">About</li>
@@ -36,199 +43,235 @@
                 <li class="navbar__menu__item">Contact</li>
             </ul>
 
+        </nav>
+        <!-- Home -->
+        <section id="home">
+            <img src="imgs/profile.jpg" alt="Rin's profile photo" class="home__avatar">
+            <h1 class="home__title">Hello,
+                <br/>
+                I'm Dream Coder
+            </h1>
+            <h2 class="home__description">
+                나를 소개하는 문구넣기</h2>
+            <button class="home__contact">CONTACT ME</button>
+        </section>
+        <!-- About -->
+        <section id="about" class="section section__container">
+            <h1>About me</h1>
+            <p>나를 어필할 수 있는 문장 2-3개 적어보기</p>
+            <div class="about__majors">
+                <div class="major">
+                    <div class="major__icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h2 class="major__title">Front-end</h2>
+                    <div class="major__description">HTML, CSS, JavaScript</div>
+                </div>
+                <div class="major">
+                    <div class="major__icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h2 class="major__title">Back-end</h2>
+                    <div class="major__description">Java, JavaScript</div>
+                </div>
+            </div>
+            <div class="about__jobs">
+                <div class="job">
+                    <img src="imgs/jobs/school.png" alt="dankook" class="job__logo">
+                    <div class="job__description">
+                        <p class="job__name">단국대학교 응용통계학과</p>
+                        <p class="job__period">2021.02월 졸업</p>
+                    </div>
+                </div>
+                <div class="job">
+                    <img src="imgs/jobs/greenart.png" alt="greenart" class="job__logo">
+                    <div class="job__description">
+                        <p class="job__name">그린아트컴퓨터아카데미</p>
+                        <p class="job__period">2020.07~2021.02</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <div class="section__container">
+                <h1>Skills</h1>
+                <h2>Skills & Attributes</h2>
+                <p>
+                    내가사용할수있는스킬들에 대한설명
+                </p>
+                <div class="skillset">
+                    <div class="skillset__left">
+                        <h3 class="skillset__title">Skills</h3>
+                        <div class="skill">
+                            <div class="skill__description">
+                                <span>HTML</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill__value" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__description">
+                                <span>CSS</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill__value" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__description">
+                                <span>JAVASCRIPT</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill__value" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__description">
+                                <span>NODE.JS</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill__value" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__description">
+                                <span>JAVA</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill__value" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skillset__right">
+                        <div class="tools">
+                            <h3 class="skillset__title">Tools</h3>
+                            <ul class="tools__list">
+                                <li>
+                                    <span>Visual Studio Code</span></li>
+                                <li>
+                                    <span>IntelliJ</span></li>
+                                <li>
+                                    <span>Eclipse</span></li>
+                            </ul>
+                        </div>
+                        <div class="etc">
+                            <h3 class="skillset__title">Etc</h3>
+                            <ul class="ect__list">
+                                <li>
+                                    <span>Git</span></li>
+                                <li>
+                                    <span>2</span></li>
+                                <li>
+                                    <span>3</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    </nav>
-    <!-- Home -->
-    <section id="home">
-        <img src="imgs/profile.jpg" alt="Rin's profile photo" class="home__avatar">
-        <h1 class="home__title">Hello, <br/> I'm Dream Coder </h1>
-        <h2 class="home__description"> 나를 소개하는 문구넣기</h2>
-        <button class="home__contact">CONTACT ME</button>
-    </section>
-    <!-- About -->
-    <section id="about" class="section section__container">
-        <h1>About me</h1>
-        <p>나를 어필할 수 있는 문장 2-3개 적어보기</p>
-        <div class="about__majors">
-            <div class="major">
-                <div class="major__icon"><i class="fab fa-html5"></i></div>
-                <h2 class="major__title">Front-end</h2>
-                <div class="major__description">HTML, CSS, JavaScript</div>
-            </div>
-            <div class="major">
-                <div class="major__icon"><i class="fas fa-server"></i></div>
-                <h2 class="major__title">Back-end</h2>
-                <div class="major__description">Java, JavaScript</div>
-            </div>
-        </div>
-        <div class="about__jobs">
-            <div class="job">
-                <img src="imgs/jobs/school.png" alt="dankook" class="job__logo">
-                <div class="job__description">
-                    <p class="job__name">단국대학교 응용통계학과</p>
-                    <p class="job__period">2021.02월 졸업</p>
+        </section>
+        <!-- Work -->
+        <section id="work" class="section">
+            <div class="section__container">
+                <h1>My work</h1>
+                <h3>Projects</h3>
+                <div class="work__categories">
+                    <botton class="category__btn active">All
+                        <span class="category__count">3</span></botton>
+                    <botton class="category__btn">Front-end
+                        <span class="category__count">1</span></botton>
+                    <botton class="category__btn">Back-end
+                        <span class="category__count">2</span></botton>
+                </div>
+                <div class="work__projects">
+                    <!-- github주소입력 -->
+                    <a href="" class="project" target="blank">
+                        <img class="project__img" src="imgs/projects/grp.png" alt="groupware">
+                        <div class="project__description">
+                            <h3>GroupWare Site</h3>
+                            <span>
+                                어떤 언어 프로그램 사용해서 만들었는지 설명쓰기</span>
+                        </div>
+                    </a>
+                    <a href="" class="project" target="blank">
+                        <img class="project__img" src="imgs/projects/grp.png" alt="groupware">
+                        <div class="project__description">
+                            <h3>GroupWare Site</h3>
+                            <span>
+                                어떤 언어 프로그램 사용해서 만들었는지 설명쓰기</span>
+                        </div>
+                    </a>
+                    <a href="" class="project" target="blank">
+                        <img class="project__img" src="imgs/projects/grp.png" alt="groupware">
+                        <div class="project__description">
+                            <h3>GroupWare Site</h3>
+                            <span>
+                                어떤 언어 프로그램 사용해서 만들었는지 설명쓰기</span>
+                        </div>
+                    </a>
+                    <a href="" class="project" target="blank">
+                        <img class="project__img" src="imgs/projects/grp.png" alt="groupware">
+                        <div class="project__description">
+                            <h3>GroupWare Site</h3>
+                            <span>
+                                어떤 언어 프로그램 사용해서 만들었는지 설명쓰기</span>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="job">
-                <img src="imgs/jobs/greenart.png" alt="greenart" class="job__logo">
-                <div class="job__description">                                    
-                    <p class="job__name">그린아트컴퓨터아카데미</p>
-                    <p class="job__period">2020.07~2021.02</p>
+        </section>
+        <!-- Testimonials -->
+        <section id="testimonials" class="section">
+            <div class="section__container">
+                <h1>Testimonial</h1>
+                <h3>See what they say about me</h3>
+                <div class="testimonial">
+                    <img src="imgs/testimonial/person.jpg" alt="people" class="testimonial__avatar">
+                    <div class="testimonial__speech-bubble">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sunt
+                            tempore maiores nemo, ducimus provident est, esse dolore placeat cumque tenetur
+                            quod ad fuga vero odio, sapiente pariatur explicabo doloribus.</p>
+                        <p class="name">
+                            <a href="">Ellie</a>
+                            / Samsung</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial__speech-bubble">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sunt
+                            tempore maiores nemo, ducimus provident est, esse dolore placeat cumque tenetur
+                            quod ad fuga vero odio, sapiente pariatur explicabo doloribus.</p>
+                        <p class="name">
+                            <a href="">Ellie</a>
+                            / Samsung</p>
+                    </div>
+                    <img src="imgs/testimonial/person.jpg" alt="people" class="testimonial__avatar">
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Skills -->
-    <section id="skills" class="section">
-        <div class="section__container">
-            <h1>Skills</h1>
-        <h2>Skills & Attributes</h2>
-        <p>
-            내가사용할수있는스킬들에 대한설명
-        </p>
-        <div class="skillset">
-            <div class="skillset__left">
-                <h3 class="skillset__title">Skills</h3>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>HTML</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value" style="width: 90%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>CSS</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value" style="width: 80%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>JAVASCRIPT</span>
-                        <span>60%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value" style="width: 60%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>NODE.JS</span>
-                        <span>70%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value" style="width: 70%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>JAVA</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value" style="width: 90%;"></div>
-                    </div>
-                </div>
+        </section>
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <h1 class="contact__title">Let's talk</h1>
+            <h2 class="contact__email">summerland829@gmail.com</h2>
+            <div class="contact__links">
+                <a href="https://rinland.tistory.com/" target="blank">
+                    <i class="fas fa-blog"></i>
+                </a>
+                <a href="https://github.com/RINLAND" target="blank">
+                    <i class="fab fa-github"></i>
+                </a>
             </div>
-            <div class="skillset__right">
-                <div class="tools">
-                    <h3 class="skillset__title">Tools</h3>
-                    <ul class="tools__list">
-                        <li><span>Visual Studio Code</span></li>
-                        <li><span>IntelliJ</span></li>
-                        <li><span>Eclipse</span></li>
-                    </ul>
-                </div>
-                <div class="etc">
-                    <h3 class="skillset__title">Etc</h3>
-                    <ul class="ect__list">
-                        <li><span>Git</span></li>
-                        <li><span>2</span></li>
-                        <li><span>3</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        </div>
-        
-    </section>
-    <!-- Work -->
-    <section id="work" class="section">
-        <h1>My work</h1>
-        <h3>Projects</h3>
-        <div class="work__categories">
-            <botton class="category__btn active">All <span class="category__count">3</span></botton>
-            <botton class="category__btn">Front-end <span class="category__count">1</span></botton>
-            <botton class="category__btn">Back-end <span class="category__count">2</span></botton>
-        </div>
-        <div class="work__projects">
-            <!-- github주소입력 -->
-            <a href="" class="project" target="blank">
-                <img class="project__img" src="imgs/projects/grp.png" alt="groupware">
-                <div class="project__description">
-                    <h3>GroupWare Site</h3>
-                    <span> 어떤 언어 프로그램 사용해서 만들었는지 설명쓰기</span>
-                </div>
-            </a>
-            <a href="" class="project" target="blank">
-                <img class="project__img" src="imgs/projects/grp.png" alt="groupware">
-                <div class="project__description">
-                    <h3>GroupWare Site</h3>
-                    <span> 어떤 언어 프로그램 사용해서 만들었는지 설명쓰기</span>
-                </div>
-            </a>
-            <a href="" class="project" target="blank">
-                <img class="project__img" src="imgs/projects/grp.png" alt="groupware">
-                <div class="project__description">
-                    <h3>GroupWare Site</h3>
-                    <span> 어떤 언어 프로그램 사용해서 만들었는지 설명쓰기</span>
-                </div>
-            </a>
-            <a href="" class="project" target="blank">
-                <img class="project__img" src="imgs/projects/grp.png" alt="groupware">
-                <div class="project__description">
-                    <h3>GroupWare Site</h3>
-                    <span> 어떤 언어 프로그램 사용해서 만들었는지 설명쓰기</span>
-                </div>
-            </a>
-        </div>
-    </section>
-    <!-- Testimonials -->
-    <section id="testimonials" class="section">
-        <h1>Testimonial</h1>
-        <h3>See what they say about me</h3>
-        <div class="testimonial">
-            <img src="imgs/testimonial/person.jpg" alt="people" class="testimonial__avatar">
-            <div class="testimonial__speech-bubble">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sunt tempore maiores nemo, ducimus provident est, esse dolore placeat cumque tenetur quod ad fuga vero odio, sapiente pariatur explicabo doloribus.</p>
-                <p class="name"><a href="">Ellie</a> / Samsung</p>
-            </div>
-        </div>
-        <div class="testimonial">
-            <div class="testimonial__speech-bubble">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sunt tempore maiores nemo, ducimus provident est, esse dolore placeat cumque tenetur quod ad fuga vero odio, sapiente pariatur explicabo doloribus.</p>
-                <p class="name"><a href="">Ellie</a> / Samsung</p>
-            </div>
-            <img src="imgs/testimonial/person.jpg" alt="people" class="testimonial__avatar">
-        </div>
-    </section>
-    <!-- Contact -->
-    <section id="contact" class="section">
-        <h1 class="contact__title">Let's talk</h1>
-        <h2 class="contact__email">summerland829@gmail.com</h2>
-        <div class="contact__links">
-            <a href="https://rinland.tistory.com/" target="blank">
-                <i class="fas fa-blog"></i></a>
-            <a href="https://github.com/RINLAND" target="blank">
-                <i class="fab fa-github"></i></a>
-        </div>
-        <p class="contact__rights"> 2021 RIN - All rights reserved </p>
-    </section>
-</body>
+            <p class="contact__rights">
+                2021 RIN - All rights reserved
+            </p>
+        </section>
+    </body>
 
 </html>
