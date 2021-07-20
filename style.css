@@ -398,7 +398,7 @@ p {
 }
 
 .project__description h3 {
-    color: var(--color-white);
+    color: var(--color-orange);
 }
 
 .project__description h3:after {
@@ -406,9 +406,9 @@ p {
     display: block;
     position: relative;
     left: 50%;
-    width: 25px;
+    width: 50px;
     height: 2px;
-    margin-left: -12px;
+    transform: translateX(-50%);
     margin-top: 8px;
     background-color: var(--color-dark-white);
 }
@@ -512,6 +512,11 @@ p {
     #navbar {
         flex-direction: column;
         align-items: flex-start;
+        background: url("imgs/home-background.png") center/cover;
+    }
+
+    #navbar.navbar--dark{
+        padding: 16px;
     }
 
     .navbar__menu {
@@ -521,6 +526,9 @@ p {
         display: none;
     }
 
+    .navbar__menu.open{
+        display: block;
+    }
     .about__majors {
         flex-direction: column;
     }
