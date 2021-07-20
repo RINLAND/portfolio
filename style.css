@@ -15,6 +15,7 @@
     --color-orange: #feb546;
     --color-black: #000000;
     --color-purple: #e0c3fc;
+    --color-skyblue: #82b0ff;
 
     /* Font Size*/
     --font-large: 48px;
@@ -110,6 +111,7 @@ p {
     color: var(--color-white);
     padding: 16px;
     transition: all var(--animation-duration) ease-in-out;
+    z-index: 1;
 }
 
 #navbar.navbar--dark {
@@ -128,8 +130,19 @@ p {
 .navbar__menu__item {
     padding: 8px 12px;
     margin: 0 4px;
+    color: var(--color-white);
+    cursor: pointer;
 }
 
+.navbar__menu__item.active {
+    border: 1px solid white;
+    border-radius: var(--size-border-radius);
+  }
+
+  .navbar__menu__item:hover {
+    background-color: var(--color-skyblue);
+    border-radius: var(--size-border-radius);
+  }
 .navbar__toggle-btn {
     position: absolute;
     top: 24px;
