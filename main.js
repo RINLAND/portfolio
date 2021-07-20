@@ -58,7 +58,20 @@ document.addEventListener('scroll', ()=>{
     home.style.opacity = 1 - window.scrollY/ homeheight;
 })
 
+// Show "arrow up" button when scrolling down
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', ()=>{
+    if(window.scrollY> homeheight /2){
+        arrowUp.classList.add('visible');
+    }else{
+        arrowUp.classList.remove('visible');
+    }
+});
 
+//hanle click on the "arrow up" button
+arrowUp.addEventListener('click',()=>{
+    scrollIntoView('#home');
+})
 
 // 앞으로 자주 쓰일 가능성이 있어서 하나 만들어두기
 function scrollIntoView(selector){

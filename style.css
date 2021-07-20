@@ -485,6 +485,26 @@ p {
     color: var(--color-purple);
     transition: all var(--animation-duration) ease-in;
 }
+
+/* Arrow up */
+.arrow-up{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    color: var(--color-skyblue);
+    opacity: 0;
+    transition: opacity 300ms ease-in;
+    pointer-events: none;
+}
+
+.arrow-up.visible{
+    opacity: 1;
+    pointer-events: auto;
+}
+
 /* For below 768px screen width */
 /* 반응형웹 */
 @media screen and (max-width: 768px) {
