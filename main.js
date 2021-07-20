@@ -73,6 +73,11 @@ arrowUp.addEventListener('click',()=>{
     scrollIntoView('#home');
 })
 
+
+// Remove selection from the previous item and select the new one
+const active = document.querySelector('.category__btn.selected');
+active.classList.remove('selected');
+e.target.classList.add('selected');
 // 앞으로 자주 쓰일 가능성이 있어서 하나 만들어두기
 function scrollIntoView(selector){
     const scrollTo = document.querySelector(selector);
